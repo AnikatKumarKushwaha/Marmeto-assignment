@@ -1,56 +1,40 @@
-# Coding Assessment L-2 Code Submission Process with Boilerplate
+# Responsive Cart Page
 
-Welcome to the coding assessment l2. We are excited to see your skills in action. Please follow the instructions below to submit your solution.
+This project is a **functional and responsive cart page** built using **HTML, CSS, and JavaScript**. The cart items are dynamically loaded from a provided JSON API.
 
-## Getting Started
+## 🔗 Live Demo
 
-1. **Clone or Download:**
-   - If using Git, clone the repository using the following command:
-     ```
-     git clone https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code.git
-     ```
-   - Alternatively, download the code as a ZIP file and extract it.
+[Check it out on Vercel](https://marmeto-assignment-sooty.vercel.app/)
 
-2. **Navigate to Project Directory:**
+## 📌 Features
 
-3. **Explore the Structure:**
-Take a moment to review the project structure:
+### 1️⃣ **HTML Structure**
 
-        project-root/
-        |-- index.html
-        |-- style.css
-        |-- script.js
-        |-- README.md
-- `index.html`: Main HTML file for your project.
-- `style.css`: CSS file for styling.
-- `script.js`: JavaScript file for scripting logic.
-- `README.md`: Documentation for your project.
-  
-> **Important:** Avoid using additional files or a single file for your code. Feel free to organize asset files by creating a separate folder.
+- Implements the structure of the cart page as per the provided design.
+- Sections include:
+  - **Header:** Logo, Navigation links, Cart icon.
+  - **Cart Content Area:** List of cart items, subtotal, total, and checkout button.
+  - **Cart Totals Section:** Displays the subtotal and total price.
+  - **Footer:** Service icons like "High Quality," "Warranty Protection," etc.
 
-## Development and Testing
+### 2️⃣ **CSS Styling**
 
-4. **Start Working:**
-- Read all requirements that are shared with design files.
-- Open `index.html` in your browser to view the initial state of the project, And start coding.
-- Modify the `style.css` and `script.js` files to implement your solution.
-5. **Testing:**
-- Test your code to ensure it produces the expected output.
-- Ensure that the console (Developer Tools) does not display any errors.
+- Matches the styling from the provided design.
+- Ensures the cart page is **responsive** (mobile-friendly and tablet view).
+- **Desktop Layout:** Two-column format (cart items on the left, totals on the right).
 
+### 3️⃣ **JavaScript Functionality**
 
----
-## Updated Submission Guidelines
-
-1. Fill out the form provided at [this link](https://forms.gle/MxuzmExHGXBh3hVk8).
-2. Provide the GitHub repository link of your project in the designated field.
-3. Share the hosted link of your project in the appropriate field.
-
-
-## Important Notes
-
-- Do not use any third-party libraries or frameworks.
-- Ensure that your project works as intended and is free from errors.
-- Make sure to include clear instructions on how to run your project (if necessary).
-
-Good luck! We look forward to reviewing your submission.
+- Fetches cart data from a JSON API and dynamically displays cart items.
+- Each cart item includes:
+  - Product Image
+  - Product Title
+  - Price
+  - Quantity (with input field)
+  - Subtotal (Price × Quantity)
+  - Remove Button (Trash Icon)
+- Dynamically calculates and updates:
+  - **Subtotal and Total Prices** in the cart.
+  - **Quantity Update:** Changing quantity updates subtotal and total.
+  - **Remove Item:** Clicking the trash icon removes the item.
+  - **Currency Formatting:** Prices displayed in Indian Rupees (₹).
