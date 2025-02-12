@@ -1,22 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
     <title>Coding Assesment L2 boilerplate</title>
+  </head>
 
-</head>
+  <body>
+    <header>
+      <nav>
+        <!-- Left Section - Logo -->
+        <div>
+          <img
+            src="./assets/icons/company-logo.png"
+            alt="Main Logo"
+            class="main-logo"
+          />
+        </div>
+        <!-- Middle Section - Navigation Links -->
+        <ul>
+          <li>Home</li>
+          <li>Shop</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        <!-- Right Section - Icons -->
+        <div>
+          <button>
+            <img src="./assets/icons/search.png" alt="search" />
+          </button>
+          <button>
+            <img src="./assets/icons/heart.png" alt="heart" />
+          </button>
+          <button>
+            <img src="./assets/icons/shopping-cart.png" alt="cart" />
+          </button>
+        </div>
+      </nav>
+      <ul class="nav-for-sm">
+        <li>Home</li>
+        <li>Shop</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <!-- Header image Section  -->
+      <section>
+        <div class="header-image-content">
+          <img src="./assets/icons/logo.png" alt="logo" id="logo" />
+          <div class="header-image-content-text">Cart</div>
+          <div><span style="font-weight: 500">Home ></span> Cart</div>
+        </div>
+      </section>
+    </header>
 
-<body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+    <main>
+      <table id="poduct-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <section class="cart-total">
+        <h1 class="cart-total-heading">Cart Totals</h1>
+        <div class="cart-total-info">
+          <div class="subtotal-container">
+            <h3 class="subtotal-container-head">Subtotal</h3>
+            <!-- subtotal from api -->
+            <h3 class="subtotal-container-value" id="subtotal"></h3>
+          </div>
+          <div class="total-container">
+            <h3 class="total-container-head">Total</h3>
+            <!-- Total from api -->
+            <h3 class="total-container-value" id="total"></h3>
+          </div>
+        </div>
+        <div class="check-out-btn-container">
+          <button class="check-out-btn">Check Out</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!---First-->
+      <div class="info">
+        <div>
+          <img src="./assets/icons/high-quality.png" alt="high-quality" />
+        </div>
+        <div>
+          <div class="info-heading">High Quality</div>
+          <div class="info-subheading">crafted from top materials</div>
+        </div>
+      </div>
+      <!---second-->
+      <div class="info">
+        <div>
+          <img src="./assets/icons/warranty.png" alt="high-quality" />
+        </div>
+        <div>
+          <div class="info-heading">Warranty Protection</div>
+          <div class="info-subheading">Over 2 years</div>
+        </div>
+      </div>
+      <!---Third-->
+      <div class="info">
+        <div>
+          <img src="./assets/icons/shipping.png" alt="high-quality" />
+        </div>
+        <div>
+          <div class="info-heading">Free Shipping</div>
+          <div class="info-subheading">Order over 150 $</div>
+        </div>
+      </div>
+      <!---forth-->
+      <div class="info">
+        <div>
+          <img src="./assets/icons/customer-support.png" alt="high-quality" />
+        </div>
+        <div>
+          <div class="info-heading">24 / 7 Support</div>
+          <div class="info-subheading">Dedicated support</div>
+        </div>
+      </div>
+    </footer>
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Confirm Delete</h2>
+        <p class="delete-text">
+          Are you sure you want to delete this item from your cart?
+        </p>
+        <div class="modal-buttons">
+          <button id="confirmDelete">Yes, Delete</button>
+          <button id="cancelDelete">Cancel</button>
+        </div>
+      </div>
     </div>
-    <!-- Happy coding 😊 -->
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
